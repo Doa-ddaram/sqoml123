@@ -1,0 +1,5 @@
+import sys                                      #10807번 미완성본(counting sort 방식을 변형해 사용할 예정)
+n = int(sys.stdin.readline())
+count_L = list(map(int,sys.stdin.readline().split()))
+v = int(sys.stdin.readline())
+print(count_L.count(v))

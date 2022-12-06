@@ -1,0 +1,6 @@
+print('SHIP NAME', ' '* 6, 'CLASS', ' ' * 10, 'DEPLOYMENT', ' ' * 1, 'IN SERVICE', sep = '')
+print('N2 Bomber', ' '* 6, 'Heavy Fighter', ' ' * 2, 'Limited', ' ' * 4, '21', ' ' * 8, sep = '' )
+print('J-Type 327', ' '* 5, 'Light Combat', ' ' * 3, 'Unlimited', ' ' * 2, '1', ' ' * 9, sep = '' )
+print('NX Cruiser', ' '* 5, 'Medium Fighter', ' ' * 1, 'Limited', ' ' * 4, '18', ' ' * 8, sep = '' )
+print('N1 Starfighter', ' '* 1, 'Medium Fighter', ' ' * 1, 'Unlimited', ' ' * 2, '25', ' ' * 8, sep = '' )
+print('Royal Cruiser', ' '* 2, 'Light Combat', ' ' * 3, 'Limited', ' ' * 4, '4', ' ' * 9, sep = '' )
