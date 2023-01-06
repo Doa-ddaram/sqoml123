@@ -1,5 +1,5 @@
 import sys
-N = int(sys.stdin.readline())
+N = int(input())
 dp = [0, 0, 1] + [0] * (N - 2)
 for i in range(3, N + 1) :
   if i % 6 == 0:
