@@ -1,7 +1,7 @@
-import sys
+import io,os
 from collections import deque
-N, M = map(int,sys.stdin.readline().split())
-sample_L = [list(sys.stdin.readline().rstrip()) for i in range(N)]
+N, M = map(int,input().split())
+sample_L = [list(input()) for i in range(N)]
 total_L = [[0 for i in range(M)] for j in range(N)]
 def bfs(y,x):
   total = 0
