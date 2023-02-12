@@ -1,21 +1,23 @@
 import sys
-from math import sqrt
+input = sys.stdin.readline
+def prime_list(n):
+    sieve_L = [True] * n
+    from math import sqrt as s
+    m = int(s(n))
+    for i in range(2, m + 1):
+        if sieve_L[i] == True:           
+            for j in range(i+i, n, i): 
+                sieve_L[j] = False
+    return [i for i in range(2, n) if sieve_L[i] == True]
+L = prime_list(1000000)
+S_L = set(L)
+def ju():
+  for i in range(len(L)):
+    if n-L[i] in S_L:
+      return (n, L[i], n-L[i])
 while True:
-  n = int(sys.stdin.readline())
-  a, b = 3, 0
+  n = int(input())
   if n == 0:
     break
-  while a + b != n:
-    t = 0
-    for j in range(2, int(sqrt(a))+1):
-      if a % j == 0:
-        t += 1
-        break
-    if t == 0:
-      b = n - a
-    for k in range(2, int(sqrt(b))+1):
-      if b % k == 0:
-        t += 1
-        a += 2
-        break
-  print('%d = %d + %d' %(n, a, b))
+  t = ju()
+  print('%d = %d + %d'%(t[0],t[1],t[2]))
